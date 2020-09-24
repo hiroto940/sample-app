@@ -1,6 +1,34 @@
 <template>
-  <center><h1>Inovange</h1></center>
-
+  <div class="container">
+    <div>
+      <Logo/>
+      <h1 class="title">
+        犬の気持ちになってみろい！！
+      </h1>
+      <img
+        src="https://tv-tokyo.imgix.net/plus/lifestyle/images/akitainu_20200130_00.jpg?auto=format,compress&lossless=0&dpr=1">
+     <br>どっちのボタンを押すか選ぶワン！！
+      <div class="links">
+        <a
+          href="https://dogfood8.xsrv.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          おなかすいたワン(笑)
+        </a>
+        <a
+          href="https://travel.rakuten.co.jp/mytrip/amazing/amazingviews
+"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          おさんぽいきたいワン！！
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -18,16 +46,15 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: 'Quicksand',
+  'Source Sans Pro',
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  'Helvetica Neue',
+  Arial,
+  sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
