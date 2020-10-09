@@ -32,13 +32,36 @@
             </ul>
           </div>
         </nav>
-
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <div
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
+          <div class="mx-auto" style="width: 200px;">
+            <h1>Inovange</h1>
           </div>
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+          <canvas class="my-4 w-100" id="myChart" width="900" height="200"></canvas>
+          <div class="card-body">
+            <div class="card" style="width: 18rem;">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+                   preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                   aria-label="Placeholder: Image cap">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"/>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+                <h1>豊永雄正</h1>
+                <p class="card-text">
+                  よっす。おらの名前はトヨナガユウセイ。トミーって呼んでくれ！！オラはInovangeの代表をしてっから..
+                </p>
+            </div>
+            <div>
+              <canvas class="my-4 w-100" id="myChart2" width="900" height="200"></canvas>
+              <canvas class="my-4 w-100" id="myChart3" width="900" height="200"></canvas>
+              works
+              <br><a href="https://www.amazon.co.jp/">2020.10.09完成</a>
+              <br><a href="https://www.google.co.jp/">2020.10.10完成</a>
+              <canvas class="my-4 w-100" id="myChart4" width="900" height="200"></canvas>
+              <p class="example">
+                contact
+                <br>Inovage@sample.com
+              </p>
+            </div>
         </main>
       </div>
     </div>
@@ -154,5 +177,10 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.example {
+  text-align: left;
+  border: solid;
 }
 </style>
