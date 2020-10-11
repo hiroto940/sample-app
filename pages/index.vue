@@ -6,9 +6,15 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  home
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active" href="#">
                   <span data-feather="home"></span>
-                  What's Inovange <span class="sr-only">(current)</span>
+                  What's Inovange <span class="What's Inovange"></span>
                 </a>
               </li>
               <li class="nav-item">
@@ -34,34 +40,51 @@
         </nav>
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
           <div class="mx-auto" style="width: 200px;">
+            <canvas class="my-4 w-100" id="myChartc" width="900" height="900"></canvas>
             <h1>Inovange</h1>
+            <canvas class="my-4 w-100" id="myChartb" width="900" height="900"></canvas>
           </div>
+          <h2>What's Inovange</h2>
+          Inovangeとは令和２年９月１６日に富山県で結成されたクリエイティブチームのことである。メンバーは４人で...
           <canvas class="my-4 w-100" id="myChart" width="900" height="200"></canvas>
-          <div class="card-body">
-            <div class="card" style="width: 18rem;">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-                   preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
-                   aria-label="Placeholder: Image cap">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#868e96"/>
-                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-                <h1>豊永雄正</h1>
-                <p class="card-text">
-                  よっす。おらの名前はトヨナガユウセイ。トミーって呼んでくれ！！オラはInovangeの代表をしてっから..
-                </p>
+          <h2>members</h2>
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">aさん</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
-            <div>
-              <canvas class="my-4 w-100" id="myChart2" width="900" height="200"></canvas>
-              <canvas class="my-4 w-100" id="myChart3" width="900" height="200"></canvas>
-              works
-              <br><a href="https://www.amazon.co.jp/">2020.10.09完成</a>
-              <br><a href="https://www.google.co.jp/">2020.10.10完成</a>
-              <canvas class="my-4 w-100" id="myChart4" width="900" height="200"></canvas>
-              <p class="example">
-                contact
-                <br>Inovage@sample.com
-              </p>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">bさん</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">cさん</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <canvas class="my-4 w-100" id="myChart2" width="900" height="400"></canvas>
+            <h2>works</h2>
+            <br><a href="https://www.amazon.co.jp/">2020.10.09完成</a>
+            <br><a href="https://www.google.co.jp/">2020.10.10完成</a>
+            <canvas class="my-4 w-100" id="myChart4" width="900" height="900"></canvas>
+            <p class="example">
+            <h2>contact</h2>
+            <br>Inovange@sample.com
+            </p>
+            <canvas class="my-4 w-100" id="myChart5" width="900" height="300"></canvas>
+          </div>
         </main>
       </div>
     </div>
@@ -178,7 +201,6 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
-
 .example {
   text-align: left;
   border: solid;
