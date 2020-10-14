@@ -12,15 +12,17 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="#what">
                   <span data-feather="home"></span>
-                  What's Inovange <span class="What's Inovange"></span>
+                  What's Inovange
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  members
+                <a href="#members" @click="clickSmoothScroll('#members')">
+                  <a class="nav-link" href="#members">
+                    <span data-feather="file"></span>
+                    members
+                  </a>
                 </a>
               </li>
               <li class="nav-item">
@@ -44,10 +46,11 @@
             <h1>Inovange</h1>
             <canvas class="my-4 w-100" id="myChartb" width="900" height="900"></canvas>
           </div>
-          <h2>What's Inovange</h2>
+          <h2 id="what">What's Inovange</h2>
           Inovangeとは令和２年９月１６日に富山県で結成されたクリエイティブチームのことである。メンバーは４人で...
           <canvas class="my-4 w-100" id="myChart" width="900" height="200"></canvas>
-          <h2>members</h2>
+          <a href="#members" @click="clickSmoothScroll('#members')"></a>
+          <h2 id="members">members</h2>
           <div class="card-deck">
             <div class="card">
               <div class="card-body">
@@ -82,6 +85,8 @@
             <p class="example">
             <h2>contact</h2>
             <br>Inovange@sample.com
+            <br>Inovange2@sample.com
+            <br>Inovange3@sample.com
             </p>
             <canvas class="my-4 w-100" id="myChart5" width="900" height="300"></canvas>
           </div>
@@ -93,7 +98,18 @@
 
 <script>
 export default {
-  name: 'web練習用'
+  methods: {
+    clickSmoothScroll (id) {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector(id),
+        400,
+        null,
+        null,
+        'y'
+      )
+    }
+  }
 }
 </script>
 
@@ -201,6 +217,7 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+
 .example {
   text-align: left;
   border: solid;

@@ -1,38 +1,4 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo/>
-      <h1 class="title">
-        犬の気持ちになってみろい！！
-      </h1>
-      <img
-        src="https://tv-tokyo.imgix.net/plus/lifestyle/images/akitainu_20200130_00.jpg?auto=format,compress&lossless=0&dpr=1">
-      <br>どっちのボタンを押すか選ぶワン！！
-      <div class="links">
-        <a
-          href="https://dogfood8.xsrv.jp/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          おなかすいたワン(笑)
-        </a>
-        <a
-          href="https://travel.rakuten.co.jp/mytrip/amazing/amazingviews
-"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          おさんぽいきたいワン！！
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
   <div>
     <b-button v-b-modal.modal-1>Launch demo modal</b-button>
 
