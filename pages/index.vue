@@ -12,9 +12,11 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#what">
-                  <span data-feather="home"></span>
-                  What's Inovange
+                <a href="#what" @click="clickSmoothScroll('#what')">
+                  <a class="nav-link" href="#what">
+                    <span data-feather="what"></span>
+                    What's Inovange
+                  </a>
                 </a>
               </li>
               <li class="nav-item">
@@ -26,15 +28,19 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  works
+                <a href="#works" @click="clickSmoothScroll('#works')">
+                  <a class="nav-link" href="#works">
+                    <span data-feather="file"></span>
+                    works
+                  </a>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  contact
+                <a href="#contact" @click="clickSmoothScroll('#contact')">
+                  <a class="nav-link" href="#contact">
+                    <span data-feather="users"></span>
+                    contact
+                  </a>
                 </a>
               </li>
             </ul>
@@ -78,12 +84,14 @@
           </div>
           <div>
             <canvas class="my-4 w-100" id="myChart2" width="900" height="400"></canvas>
-            <h2>works</h2>
+            <a href="#works" @click="clickSmoothScroll('#works')"></a>
+            <h2 id="works">works</h2>
             <br><a href="https://www.amazon.co.jp/">2020.10.09完成</a>
             <br><a href="https://www.google.co.jp/">2020.10.10完成</a>
             <canvas class="my-4 w-100" id="myChart4" width="900" height="900"></canvas>
             <p class="example">
-            <h2>contact</h2>
+              <a href="#contact" @click="clickSmoothScroll('#contact')"></a>
+            <h2 id="contact">contact</h2>
             <br>Inovange@sample.com
             <br>Inovange2@sample.com
             <br>Inovange3@sample.com
